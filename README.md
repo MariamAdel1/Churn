@@ -47,7 +47,27 @@
 ### Accuracy
 
 ## Logistic Regression	72.99%%
-## Random Forest	85.0699%
+## Random Forest	     85.0699%
 
+### Random Forest achieved better performance due to ensemble learning and multiple decision trees.
 
-### Charges
+## 📊Evaluation Metrics
+
+### Accuracy
+
+### Confusion Matrix
+
+### Precision & Recall
+
+## 🚀Key Learnings
+
+### Difference between single models and ensemble models
+
+### Importance of n_estimators
+
+### Overfitting vs Underfitting
+
+### Model evaluation techniques
+
+### I learned how to handle imblanaced data 
+
