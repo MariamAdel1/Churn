@@ -1,4 +1,5 @@
 # 📊 Customer Churn Prediction
+## -------------------------------------------------------------------------------
 ## 📌 Project Overview
 
 ### This project focuses on predicting customer churn using Machine Learning models.
