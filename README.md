@@ -1,5 +1,4 @@
-
-## 🚀 Key Features
+# 🚀 Key Features
 
 ### Data Preprocessing
 - ✅ Outlier detection and removal using IQR method
