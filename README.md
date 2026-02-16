@@ -24,4 +24,30 @@
 
 ### Services used
 
+## 🛠️Technologies Used
+
+### Python
+
+### Pandas
+
+### NumPy
+
+### Matplotlib / Seaborn
+
+### Scikit-learn
+
+## 🤖Models Implemented
+
+### Logistic Regression
+
+### Random Forest
+
+## 📈Model Performance
+
+### Accuracy
+
+## Logistic Regression	72.99%%
+## Random Forest	85.0699%
+
+
 ### Charges
