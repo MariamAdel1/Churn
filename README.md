@@ -22,6 +22,6 @@
 
 ### Account information
 
-Services used
+### Services used
 
-Charges
+### Charges
