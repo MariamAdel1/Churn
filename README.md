@@ -1,73 +1,63 @@
-# 📊 Customer Churn Prediction
 
-## 📌 Project Overview
+## 🚀 Key Features
 
-### This project focuses on predicting customer churn using Machine Learning models.
-### The goal is to identify customers who are likely to leave a company based on historical data.
+### Data Preprocessing
+- ✅ Outlier detection and removal using IQR method
+- ✅ Handling missing values (none found in dataset)
+- ✅ Encoding categorical variables (Gender, Geography)
+- ✅ Feature scaling using StandardScaler
 
-## 🎯Problem Statement
+### Handling Class Imbalance
+- Dataset has ~20% churn rate (imbalanced)
+- **SMOTE (Synthetic Minority Over-sampling Technique)** used to create synthetic samples of the minority class
+- Balanced training data: 50/50 split after SMOTE
 
-### Customer churn is a major challenge for companies.
-### By predicting churn early, businesses can take actions to retain customers
+### Models Implemented
 
-## 📂Dataset
+#### 1. Logistic Regression
+- **Accuracy**: 72.99%
+- **AUC-ROC**: 0.8015
+- **Pros**: Simple, interpretable, fast
+- **Cons**: High false positives (415)
 
-### Dataset: Customer Churn Dataset
+#### 2. Random Forest 🌲 (Best Model)
+- **Accuracy**: 85.07%
+- **AUC-ROC**: 0.8642
+- **Pros**: Higher accuracy, lower false positives (128)
+- **Feature Importance**: Identifies key churn factors
 
-### Target Variable: Churn
+## 📊 Results & Performance
 
-### Features include:
+### Model Comparison
 
-### Demographics
+| Metric | Logistic Regression | Random Forest |
+|--------|---------------------|---------------|
+| Accuracy | 72.99% | **85.07%** |
+| AUC-ROC | 0.8015 | **0.8642** |
+| Precision (Churn) | 0.41 | **0.64** |
+| Recall (Churn) | 0.73 | 0.60 |
+| F1-Score (Churn) | 0.52 | **0.62** |
+| False Positives | 415 | **128** |
+| False Negatives | 106 | **96** |
 
-### Account information
+### ROC Curve Comparison
+![ROC Curve Comparison](images/roc_curve_comparison.png)
 
-### Services used
+### Feature Importance (Random Forest)
+![Feature Importance](images/feature_importance.png)
 
-## 🛠️Technologies Used
+## 🔑 Key Insights
 
-### Python
+1. **Age is the strongest predictor** of churn - older customers are more likely to leave
+2. **Account balance** positively correlates with churn
+3. **Number of products** has negative correlation - customers with more products are more loyal
+4. **Geography matters** - customers from Germany show higher churn rates
+5. **Active members** are significantly less likely to churn
 
-### Pandas
+## 🏁 Getting Started
 
-### NumPy
+### Prerequisites
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn jupyter
 
-### Matplotlib / Seaborn
-
-### Scikit-learn
-
-## 🤖Models Implemented
-
-### Logistic Regression
-
-### Random Forest
-
-## 📈Model Performance
-
-### Accuracy
-
-## Logistic Regression	72.99%%
-## Random Forest	     85.0699%
-
-### Random Forest achieved better performance due to ensemble learning and multiple decision trees.
-
-## 📊Evaluation Metrics
-
-### Accuracy
-
-### Confusion Matrix
-
-### Precision & Recall
-
-## 🚀Key Learnings
-
-### Difference between single models and ensemble models
-
-### Importance of n_estimators
-
-### Overfitting vs Underfitting
-
-### Model evaluation techniques
-
-### I learned how to handle imblanaced data 
 
